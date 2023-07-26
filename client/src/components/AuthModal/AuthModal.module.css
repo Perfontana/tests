@@ -1,0 +1,32 @@
+.modal_window{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputs{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.buttons{
+  margin-top: 50px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

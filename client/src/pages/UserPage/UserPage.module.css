@@ -1,0 +1,15 @@
+.userCard{
+  margin-top: 50px;
+}
+
+.sendButton{
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding:20px;
+}
