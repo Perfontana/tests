@@ -37,7 +37,7 @@ const defaultPost = {
   tags: "tag1, tag2",
 };
 
-describe("Post", () => {
+describe("Post component", () => {
   afterEach(() => {
     localStorage.clear();
   });

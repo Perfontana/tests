@@ -4,7 +4,7 @@ import { getModelToken } from '@nestjs/sequelize';
 import { Post } from './post.model';
 import { postMock } from './mocks/post.mock';
 
-describe('PostService', () => {
+describe('Module Post -> PostService', () => {
   let service: PostService;
 
   beforeEach(async () => {
@@ -56,7 +56,7 @@ describe('PostService', () => {
     expect(result).toEqual(expectedResult);
   });
 
-  describe('Post updates', () => {
+  describe('Module Post -> PostService -> update post', () => {
     it('should return error if post is not found', async () => {
       const authorId = 'userId';
 
@@ -83,7 +83,7 @@ describe('PostService', () => {
       await expect(service.updatePost('1', body, authorId)).rejects.toThrow();
     });
 
-    it('should return error if user is not the author', async () => {
+    it('should add image filename to post.image field', async () => {
       const authorId = '1';
 
       const file = {
