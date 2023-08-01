@@ -4,7 +4,7 @@ import { getModelToken } from '@nestjs/sequelize';
 import { Post } from './post.model';
 import { postMock } from './mocks/post.mock';
 
-describe('Module Post -> PostService', () => {
+describe('PostService tests', () => {
   let service: PostService;
 
   beforeEach(async () => {
@@ -56,7 +56,7 @@ describe('Module Post -> PostService', () => {
     expect(result).toEqual(expectedResult);
   });
 
-  describe('Module Post -> PostService -> update post', () => {
+  describe('Update post tests', () => {
     it('should return error if post is not found', async () => {
       const authorId = 'userId';
 
