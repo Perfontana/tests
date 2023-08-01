@@ -4,7 +4,7 @@ import { getModelToken } from '@nestjs/sequelize';
 import { Post } from './post.model';
 import { postMock } from './mocks/post.mock';
 
-describe('PostService tests', () => {
+describe('Test PostService', () => {
   let service: PostService;
 
   beforeEach(async () => {
